@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SakSam</title>
+    <link rel="stylesheet" href="form-css.css">
+</head>
+
+<body>
+    <hr>
+    <div><h1>Enter your details for my personal Abuse</h1></div>
+    <hr>
+    <fieldset>
+        <legend>Personal Details</legend>
+        <table>
+            <tr>
+                <td><label>Name : </label></td>
+                <td><input type="text" size=50 onclick="namefunc()" id='name'/></td>
+            </tr>
+            <tr>
+                <td><label>Age : </label></td>
+                <td><input type="text" placeholder="" size=50  onclick="agefunc()" id='age'/></td>
+            </tr>
+            <tr>
+                <td><label>Sex : </label></td>
+                <td id='sex'><label>Male</label><input type="radio" placeholder="" onchange="sexfunc()" />
+                    <label>Female</label><input type="radio" placeholder="" onchange="sexfunc()" /></td>
+            </tr>
+            <tr>
+                <td><label>Email : </label></td>
+                <td><input type="text" id='email' placeholder="" size=50  onclick="emailfunc()" onkeypress="emailfuncblur()"/></td>
+            </tr>
+            <tr>
+                <td><label>Favorite Color :</label></td>
+                <td> <input type="text" size=50 id='color' onclick="colorfunc()"/></td>
+            </tr>
+            <tr>
+                <td><label>Height :</label></td>
+                <td><input type="text" id='height' onclick="heightfunc()" size=50 /> </td>
+            </tr>
+            <tr>
+                <td><label>Weight :</label></td>
+                <td><input type="text" id="weight" onclick="weightfunc()" size=50 /></td>
+            </tr>
+            <tr>
+                <td><label>Bra Size :</label></td>
+                <td><input type="text" id='bra' onclick="brafunc()" size=50 /></td>
+            </tr>
+            <tr>
+                <td colspan=2><label>What is the one thing would you want from me when we next meet?</label></br></td>
+            </tr>
+            <tr>
+                <td colspan=2><input type="checkbox" id='check1' onclick="nextfunc()"/><label>Loads of hugs</label></td>
+            </tr>
+            <tr>
+                <td colspan=2><input type="checkbox" id='check2' onclick="nextfunc()" /><label>Insane amount of kisses</label></td>
+            </tr>
+            <tr>
+                <td colspan=2><input type="checkbox" id='check3' onclick="nextfunc()"/><label>Soul piercing massage</label></td>
+            </tr>
+
+            <tr>
+                <td colspan=2><label>What is the 1 thing you hate about me?</label></td>
+            </tr>
+            <tr><td colspan=2> <input type="text" size=69 id='hate' onclick="hatefunc()" /></td></tr>
+            <tr>
+                <td><label>Do you love me?</label></td>
+                <td><input type="text" size=50 id='love' onclick="lovefunc()"/></td>
+            </tr>
+            <tr>
+                <td colspan=2 style="text-align: center;"><button  onclick="submitbtn()">Submit this stupid form</button></td>
+            </tr>
+        </table>
+        
+    </fieldset>
+  
+<script>
+function namefunc(){
+    
+    alert("WHAAAAAT????????????\nWhy are you even trying to fill it?It's already filled.");
+    document.getElementById("name").value = "Cutu wali Mishty";
+    document.getElementById("name").disabled =true;
+}
+
+function agefunc(){
+    alert("Kya yaar Mishtu, i know your age naaa!!\nYou are obviously 123 years old")
+    document.getElementById("age").value = "Just Kidding you are toh mera 12 year old baccha."
+    document.getElementById("age").disabled =true;
+}
+function sexfunc(){
+    document.getElementById("sex").innerHTML = '<input type="text" value = \'Wish, I could get any.\' disabled/>';
+}
+function emailfunc(){
+alert('Isko khud bharna padega tujhe.')
+}
+function emailfuncblur(){
+    alert('Actually I change my mind now');
+    document.getElementById("email").value = "DahiAurKheerSaathMaiNhiKhaate@sameer.com"
+    document.getElementById("email").disabled =true;
+}
+function colorfunc(){
+    document.getElementById("color").value = "It's Red naa, my Purple Turtle."
+    document.getElementById("color").disabled =true;
+}
+function heightfunc(){
+    document.getElementById("height").value = "789 Ants level (Ps. its true, if in doubt count and confirm!"
+    document.getElementById("height").disabled =true;
+}
+function weightfunc(){
+    document.getElementById("weight").value = "250gm"
+    document.getElementById("weight").disabled =true;
+}
+function brafunc(){
+    document.getElementById("bra").value='***Insert Funny BooB Joke*** (Coz i genuinely dont know)';
+    document.getElementById("bra").disabled = true;
+}
+function nextfunc(){
+    alert("Duhh!!!  You obviously gonna get all of them.")
+    document.getElementById("check1").checked = true;
+    document.getElementById("check2").checked = true;
+    document.getElementById("check3").checked = true;
+    document.getElementById("check1").disabled = true;
+    document.getElementById("check2").disabled = true;
+    document.getElementById("check3").disabled = true;
+}
+function hatefunc(){
+    document.getElementById("hate").value='Nopes Nopes, dont even think about this question. NOT Allowed OK';
+    document.getElementById("hate").disabled = true;
+}
+function lovefunc(){
+    document.getElementById("love").value='I would rather have your actions answer this';
+    document.getElementById("love").disabled = true;
+}
+function submitbtn(){
+    alert('Submit Shabmit nhi hota kidhr bhi ye form HAHAHA');
+}
+</script>
+</body>
+
+</html>
